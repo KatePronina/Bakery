@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Bakery</title>
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link rel="preload" href="fonts/malina-webfont.woff2" as="font">
+</head>
+<body>
+	<section class="main">
+		<div class="wrapper main__wrapper">
+			<header class="header main__header">
+				<div class="logo header__logo">
+					<div class="logo__img">
+						<img src="img/logo.png" alt="Hipsweet">
+					</div>
+					<span class="logo__text">Hipsweet</span>
+				</div>
+				<div class="nav header__nav">
+					<ul class="site-list nav__list">
+						<li class="site-list__item">
+							<a href="#" class="site-list__link">Сладости</a>
+						</li>
+						<li class="site-list__item">
+							<a href="#" class="site-list__link">Доставка</a>
+						</li>
+						<li class="site-list__item">
+							<a href="#" class="site-list__link">Компания</a>
+						</li>
+						<li class="site-list__item">
+							<a href="#" class="site-list__link">Команда</a>
+						</li>
+					</ul>
+				</div>
+				<div class="user-block header__user-block">
+					<a href="#" class="user-block__link user-block__link--login"></a>
+					<a href="#" class="user-block__link user-block__link--search"></a>
+				</div>
+			</header>
+			<div class="cupcake-slider main__cupcake-slider">
+				<button class="cupcake-slider__arrow cupcake-slider__arrow--prev" id="prev">
+					<img src="img/arrow.svg" alt="Предыдущий">
+				</button>
+				<div class="content cupcake-slider__content">
+					<div class="content__items">
+						<div class="content__item">
+							<div class="content__img">
+								<img src="img/cupcake.png" alt="Cake">
+							</div>
+							<div class="content__info">
+								<h1 class="content__title">Sweet Cupcake</h1>
+								<p class="content__description">
+									В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом. Заглазировано шоколадной глазурью
+								</p>
+								<div class="content__order">
+									<span class="content__price">199 p</span>
+									<button class="content__order-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+						<div class="content__item">
+							<div class="content__img">
+								<img src="img/cupcake.png" alt="Cake">
+							</div>
+							<div class="content__info">
+								<h1 class="content__title">Blueberry muffin</h1>
+								<p class="content__description">
+									В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом. Заглазировано шоколадной глазурью
+								</p>
+								<div class="content__order">
+									<span class="content__price">150 p</span>
+									<button class="content__order-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+						<div class="content__item">
+							<div class="content__img">
+								<img src="img/cupcake.png" alt="Cake">
+							</div>
+							<div class="content__info">
+								<h1 class="content__title">Chocolate Cupcake</h1>
+								<p class="content__description">
+									В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом. Заглазировано шоколадной глазурью
+								</p>
+								<div class="content__order">
+									<span class="content__price">173 p</span>
+									<button class="content__order-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+						<div class="content__item">
+							<div class="content__img">
+								<img src="img/cupcake.png" alt="Cake">
+							</div>
+							<div class="content__info">
+								<h1 class="content__title">Coconut cream Cupcake</h1>
+								<p class="content__description">
+									В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом. Заглазировано шоколадной глазурью
+								</p>
+								<div class="content__order">
+									<span class="content__price">173 p</span>
+									<button class="content__order-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+						<div class="content__item">
+							<div class="content__img">
+								<img src="img/cupcake.png" alt="Cake">
+							</div>
+							<div class="content__info">
+								<h1 class="content__title">Carrot Cupcake</h1>
+								<p class="content__description">
+									В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом. Заглазировано шоколадной глазурью
+								</p>
+								<div class="content__order">
+									<span class="content__price">123 p</span>
+									<button class="content__order-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+						<div class="content__item">
+							<div class="content__img">
+								<img src="img/cupcake.png" alt="Cake">
+							</div>
+							<div class="content__info">
+								<h1 class="content__title">Apple Cupcake</h1>
+								<p class="content__description">
+									В основе пирожного Sweet Cupcake выпеченный бисквит, промоченный сахарным сиропом с добавлением коньяка и десертного вина. Прослоено суфлейной массой, смешанной с апельсиновым концентратом. Заглазировано шоколадной глазурью
+								</p>
+								<div class="content__order">
+									<span class="content__price">165 p</span>
+									<button class="content__order-btn">Заказать</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="cupcake-slider__arrow cupcake-slider__arrow--next" id="next">
+					<img src="img/arrow.svg" alt="Следующий">
+				</button>
+				<div class="cupcake-slider__controls">
+					<button class="cupcake-slider__controls-item cupcake-slider__controls-item--active" data-id="0"></button>
+					<button class="cupcake-slider__controls-item" data-id="-100"></button>
+					<button class="cupcake-slider__controls-item" data-id="-200"></button>
+					<button class="cupcake-slider__controls-item" data-id="-300"></button>
+					<button class="cupcake-slider__controls-item" data-id="-400"></button>
+					<button class="cupcake-slider__controls-item" data-id="-500"></button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="menu">
+		<div class="wrapper menu__wrapper">
+			<h2 class="menu__title">Мы поставляем</h2>
+			<p class="menu__description">
+				Также мы делаем выпечку под заказ для различных праздников и банкетов. Заказать индивидуальную выпечку вы можете заполнив <a href="#" class="menu__link">форму</a> . После с Вами свяжется один из наших поваров и обсудит заказ более детально. 
+			</p>
+			<div class="catalog menu__catalog">
+				<article class="item catalog__item">
+					<div class="item__img">
+						<img src="img/cookie.png" alt="Печенье">
+					</div>
+					<b class="item__name">Печенье</b>
+					<p class="item__description">
+						Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+					</p>
+				</article>
+				<article class="item catalog__item">
+					<div class="item__img">
+						<img src="img/donut.png" alt="Пончики">
+					</div>
+					<b class="item__name">Пончики</b>
+					<p class="item__description">
+						Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+					</p>
+				</article>
+				<article class="item catalog__item">
+					<div class="item__img">
+						<img src="img/roll.png" alt="Рулеты">
+					</div>
+					<b class="item__name">Рулеты</b>
+					<p class="item__description">
+						Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+					</p>
+				</article>
+				<article class="item catalog__item">
+					<div class="item__img">
+						<img src="img/marshmallows.png" alt="Зефир">
+					</div>
+					<b class="item__name">Зефир</b>
+					<p class="item__description">
+						Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+					</p>
+				</article>
+				<article class="item catalog__item">
+					<div class="item__img">
+						<img src="img/chocolate.png" alt="Шоколад">
+					</div>
+					<b class="item__name">Шоколад</b>
+					<p class="item__description">
+						Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+					</p>
+				</article>
+				<article class="item catalog__item">
+					<div class="item__img">
+						<img src="img/cupcake-item.png" alt="Пирожные">
+					</div>
+					<b class="item__name">Пирожные</b>
+					<p class="item__description">
+						Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+					</p>
+				</article>
+				<article class="item catalog__item">
+					<div class="item__img">
+						<img src="img/candy.png" alt="Конфеты">
+					</div>
+					<b class="item__name">Конфеты</b>
+					<p class="item__description">
+						Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+					</p>
+				</article>
+				<article class="item catalog__item">
+					<div class="item__img">
+						<img src="img/chocolate.png" alt="Шоколад">
+					</div>
+					<b class="item__name">Шоколад</b>
+					<p class="item__description">
+						Десерт, состоящий из одного или нескольких коржей, пропитанных кремом или джемом. Сверху торт обычно украшают кремом, глазурью или фруктами
+					</p>
+				</article>
+			</div>
+		</div>
+	</section>
+	<section class="team">
+		<div class="wrapper team__wrapper">
+			<div class="team__header">
+				<h2 class="team__title">Наша команда</h2>
+				<div class="members team__members">
+					<ul class="members__list">
+						<li class="members__item members__item--active">
+							<b class="members__name">Тони Ройстер</b>
+							<span class="members__position">Главный шеф повар</span>
+						</li>
+						<li class="members__item">
+							<b class="members__name">Ричард Джеймс</b>
+							<span class="members__position">Главный кондитер</span>
+						</li>
+						<li class="members__item">
+							<b class="members__name">Майти Модстер</b>
+							<span class="members__position">Дегустатор</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="member-description team__member-description">
+				<div class="member-description__main-info">
+					<p class="member-description__main-info-bio">
+						Тони родился в Ленинграде в 1985 году. Учился в Морском техническом колледже по специальности "судовой повар". В кулинарную жизнь окунулся в 2005, когда попал к Фабриццио Фатуччи и стал его правой рукой.
+					</p>
+					<p class="member-description__main-info-important">
+						Тони неоднократно посещал Италию, где изучил местную гастрономию и набрался опыта.
+					</p>
+				</div>
+				<div class="member-description__img">
+					<img src="img/cook.png" alt="Тони Ройстер">
+				</div>
+				<div class="member-description__info">
+					<p class="member-description__info-additional">
+						Шеф-повар является постоянным участником различных номинаций и фестивалей: выступал в Париже на мировом фестивале Omnivore Paris в команде с Иваном Березуцким; представлял Россию на недее русской кухни в Эстонии; регулярно участвовал в "Мадрид Фьюжн", съезде шеф-поваров со всего мира, где представляются новые гастрономические техники. В 2012 году на Экономическом форуме обеспечивал работу кухни для высокопоставленных лиц. Был участником экспедиции на Белое море, где узнал все о региональных продуктах и особенностях кухни. В 2013 участвовал в фестивале "Северная кухня"; выезжал на гастроли в Москву.
+					</p>
+					<p class="member-description__info-additional">
+						Тони занимается развитием и инновациями в русской гастрономии, а также увлекается искусством - пишет картины.
+					</p>
+				</div>
+			</div>
+			<div class="order team__order">
+				<b class="order__title">Закажи сейчас</b>
+				<form action="" class="order__form">
+					<label for="name" class="order__form-label">Ваше имя</label>
+					<input type="text" class="order__form-input" id="name">
+
+					<label for="email" class="order__form-label">Введите Ваш email</label>
+					<input type="email" class="order__form-input" id="email">
+
+					<label for="tel" class="order__form-label">Введите Ваш номер</label>
+					<input type="tel" class="order__form-input" id="tel">
+
+					<input type="checkbox" class="order__form-checkbox" id="call">
+					<label for="call" class="order__form-label-call">Заказать обратный звонок</label>
+
+					<button class="order__form-submit" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="questions">
+		<div class="questions__wrapper">
+			<h2 class="questions__title">Часто задаваемые вопросы</h2>
+			<ol class="list-faq questions__list-faq">
+				<li class="list-faq__item list-faq__item--active">
+					<p class="list-faq__name">Сколько времени курьер доставляет заказ</p>
+					<p class="list-faq__answer">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium molestie sem, sed placerat metus malesuada vel. Aenean consequat dapibus velit, vel efficitur metus rutrum sed. Ut fermentum turpis nec orci aliquam, sed lacinia velit eleifend. Integer ut elit eu tortor accumsan tempus non ut ligula. Fusce dapibus lectus sit amet arcu tristique, vel placerat est volutpat. Fusce rhoncus orci elit, non commodo dui blandit id. Aenean sem justo, hendrerit ac magna hendrerit, feugiat consectetur nunc. Suspendisse ullamcorper enim nisi, ac tincidunt justo finibus eget.
+					</p>
+				</li>
+				<li class="list-faq__item">
+					<p class="list-faq__name">Будет ли бонус, если курьер опоздал?</p>
+					<p class="list-faq__answer">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium molestie sem, sed placerat metus malesuada vel. Aenean consequat dapibus velit, vel efficitur metus rutrum sed. Ut fermentum turpis nec orci aliquam, sed lacinia velit eleifend. Integer ut elit eu tortor accumsan tempus non ut ligula.
+					</p>
+				</li>
+				<li class="list-faq__item">
+					<p class="list-faq__name">Добавляете ли вы консерванты в вашу продукцию?</p>
+					<p class="list-faq__answer">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium molestie sem, sed placerat metus malesuada vel. Aenean consequat dapibus velit, vel efficitur metus rutrum sed. Ut fermentum turpis nec orci aliquam, sed lacinia velit eleifend. Integer ut elit eu tortor. Fusce rhoncus orci elit, non commodo dui blandit id. Aenean sem justo, hendrerit ac magna hendrerit, feugiat consectetur nunc. Suspendisse ullamcorper enim nisi, ac tincidunt justo finibus eget.
+					</p>
+				</li>
+				<li class="list-faq__item">
+					<p class="list-faq__name">Как долго готовится индивидуальный торт?</p>
+					<p class="list-faq__answer">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium molestie sem, sed placerat metus malesuada vel. Aenean consequat dapibus velit, vel efficitur metus rutrum sed. Ut fermentum turpis nec.
+					</p>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<div class="map"></div>
+	<footer class="main-footer">
+		<div class="wrapper main-footer__wrapper">
+			<div class="logo main-footer__logo">
+				<div class="logo__img">
+					<img src="img/logo.png" alt="Hipsweet">
+				</div>
+				<span class="logo__text">Hipsweet</span>
+			</div>
+			<p class="main-footer__adress">
+				г. Санкт-Петербург, Большой Смоленский проспект, 10
+			</p>
+			<div class="social-links main-footer__social-links">
+				<a href="#" class="social-links__item">
+					<svg class="social-links__icon">
+						<use class="social-links__icon-element" xlink:href="img/sprite/symbol/sprite.svg#fb"></use>
+					</svg>
+				</a>
+				<a href="#" class="social-links__item">
+					<svg class="social-links__icon">
+						<use class="social-links__icon-element" xlink:href="img/sprite/symbol/sprite.svg#inst"></use>
+					</svg>
+				</a>
+				<a href="#" class="social-links__item">
+					<svg class="social-links__icon">
+						<use class="social-links__icon-element" xlink:href="img/sprite/symbol/sprite.svg#twit"></use>
+					</svg>
+				</a>
+				<a href="#" class="social-links__item">
+					<svg class="social-links__icon">
+						<use class="social-links__icon-element" xlink:href="img/sprite/symbol/sprite.svg#vk"></use>
+					</svg>
+				</a>
+			</div> 
+		</div>
+	</footer>
+</body>
+</html>
