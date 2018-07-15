@@ -1,5 +1,19 @@
 (function () {
 
+var titles = document.querySelectorAll('.list-faq__name');
+
+var onTitlesClick = function (evt) {
+	evt.target.parentElement.classList.toggle('list-faq__item--active');
+}
+
+for (var i = 0; i < titles.length; i++) {
+	titles[i].addEventListener('click', onTitlesClick);
+}
+
+
+})();
+(function () {
+
 var buttonNext = document.querySelector('#next');
 var buttonPrev = document.querySelector('#prev');
 var tape = document.querySelector('.content__items'); //лента
