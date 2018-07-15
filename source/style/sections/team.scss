@@ -64,11 +64,18 @@
 	max-width: 230px;
 	display: flex;
 	flex-direction: column;
+	border-radius: 20px;
 
 	padding-top: 15px;
 	padding-right: 35px;
 	padding-bottom: 25px;
 	padding-left: 25px;
+
+	transition: .2s;
+
+	&:hover {
+		background-color: rgba(0, 0, 0, .1);
+	}
 
 	@media (max-width: 900px) {
 		padding-top: 10px;
@@ -92,8 +99,11 @@
 
 	&--active {
 		background-color: $brown;
-		border-radius: 20px;
 		position: relative;
+
+		&:hover {
+			background-color: darken($brown, 5%);
+		}
 
 		.members__name {
 			color: $yellow;
@@ -139,12 +149,16 @@
 	}
 }
 .member-description {
-	display: flex;
+	display: none;
 	color: $lightgrey;
 	font-family: Arial, sans-serif;
 	font-style: italic;
 	font-size: 14px;
 	line-height: 21px;
+
+	&--active {
+		display: flex;
+	}
 }
 .member-description__main-info {
 	max-width: 285px;
