@@ -8,6 +8,11 @@ var onTitlesClick = function (evt) {
 
 for (var i = 0; i < titles.length; i++) {
 	titles[i].addEventListener('click', onTitlesClick);
+	titles[i].addEventListener('keydown', function (evt) { 
+		if (evt.keyCode === 13) { 
+			onTitlesClick(evt); 
+		} 
+	});
 }
 
 
