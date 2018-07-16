@@ -136,7 +136,13 @@ var onTabsHeadersClick = function (evt) {
 
 for (var i = 0; i < tabsHeaders.length; i++) {
 	tabsHeaders[i].addEventListener('click', onTabsHeadersClick);
+	tabsHeaders[i].addEventListener('keydown', function (evt) { 
+		if (evt.keyCode === 13) { 
+			onTabsHeadersClick(evt); 
+		} 
+	});
 }
+
 
 
 })();
