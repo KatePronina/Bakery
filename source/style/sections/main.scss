@@ -234,14 +234,12 @@
 	}
 }
 .content__order-btn {
-	height: 42px;
-	width: 108px;
 	box-sizing: border-box;
+	padding: 12px 20px;
 	border-radius: 20px;
 	background-color: $yellow;
 	color: #a4151c;
-	border: none;
-	cursor: pointer;
+	text-decoration: none;
 
 	font-family: Arial, sans-serif;
 	font-size: 14px;
