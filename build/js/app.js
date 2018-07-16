@@ -14,6 +14,53 @@ for (var i = 0; i < titles.length; i++) {
 })();
 (function () {
 
+ymaps.ready(init);
+var myMap,
+	myPlacemark;
+
+function init(){
+	myMap = new ymaps.Map("contacts", {
+    	center: [59.9011,30.4219],
+    	zoom: 11
+    });
+
+    myPlacemark = new ymaps.Placemark([59.8980,30.4163], {
+        hintContent: 'г. Санкт-Петербург, Большой Смоленский проспект, 10',
+    }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/map-pin.png',
+        iconImageSize: [42, 59]
+    });
+
+    myMap.geoObjects.add(myPlacemark);
+}
+
+})();
+(function () {
+
+var navLinks = document.querySelectorAll('.site-list__link');
+var menuLink = document.querySelector('.menu__link');
+
+var scrollTo = function (evt) {
+	evt.preventDefault();
+	var id = evt.target.getAttribute('href').slice(1);//id элемента, к которому скроллим
+	var elem = document.querySelector('#' + id);//элемент, к которому скроллим
+
+	window.scroll({
+		behavior: 'smooth',
+		left: 0,
+		top: elem.offsetTop
+	});
+}
+
+for (var i = 0; i < navLinks.length; i++) {
+	navLinks[i].addEventListener('click', scrollTo);
+}
+menuLink.addEventListener('click', scrollTo);
+
+})();
+(function () {
+
 var buttonNext = document.querySelector('#next');
 var buttonPrev = document.querySelector('#prev');
 var tape = document.querySelector('.content__items'); //лента

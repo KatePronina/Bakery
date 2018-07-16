@@ -21,16 +21,16 @@
 				<div class="nav header__nav">
 					<ul class="site-list nav__list">
 						<li class="site-list__item">
-							<a href="#" class="site-list__link">Сладости</a>
+							<a href="#menu" class="site-list__link">Сладости</a>
 						</li>
 						<li class="site-list__item">
-							<a href="#" class="site-list__link">Доставка</a>
+							<a href="#team" class="site-list__link">Команда</a>
 						</li>
 						<li class="site-list__item">
-							<a href="#" class="site-list__link">Компания</a>
+							<a href="#order" class="site-list__link">Доставка</a>
 						</li>
 						<li class="site-list__item">
-							<a href="#" class="site-list__link">Команда</a>
+							<a href="#contacts" class="site-list__link">Контакты</a>
 						</li>
 					</ul>
 				</div>
@@ -151,11 +151,11 @@
 			</div>
 		</div>
 	</section>
-	<section class="menu">
+	<section class="menu" id="menu">
 		<div class="wrapper menu__wrapper">
 			<h2 class="menu__title">Мы поставляем</h2>
 			<p class="menu__description">
-				Также мы делаем выпечку под заказ для различных праздников и банкетов. Заказать индивидуальную выпечку вы можете заполнив <a href="#" class="menu__link">форму</a> . После с Вами свяжется один из наших поваров и обсудит заказ более детально. 
+				Также мы делаем выпечку под заказ для различных праздников и банкетов. Заказать индивидуальную выпечку вы можете заполнив <a href="#order" class="menu__link">форму</a> . После с Вами свяжется один из наших поваров и обсудит заказ более детально. 
 			</p>
 			<div class="catalog menu__catalog">
 				<article class="item catalog__item">
@@ -233,15 +233,15 @@
 			</div>
 		</div>
 	</section>
-	<section class="team">
+	<section class="team" id="team">
 		<div class="wrapper team__wrapper">
 			<div class="team__header">
 				<h2 class="team__title">Наша команда</h2>
 				<div class="members team__members">
 					<ul class="members__list">
 						<li class="members__item members__item--active" data-tab="0">
-							<b class="members__name">Тони Ройстер</b>
-							<span class="members__position">Главный шеф повар</span>
+								<b class="members__name">Тони Ройстер</b>
+								<span class="members__position">Главный шеф повар</span>
 						</li>
 						<li class="members__item" data-tab="1">
 							<b class="members__name">Ричард Джеймс</b>
@@ -319,7 +319,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="order team__order">
+			<div class="order team__order" id="order">
 				<b class="order__title">Закажи сейчас</b>
 				<form action="" class="order__form">
 					<label for="name" class="order__form-label">Ваше имя</label>
@@ -370,7 +370,7 @@
 			</ol>
 		</div>
 	</section>
-	<div class="map"></div>
+	<div class="map" id="contacts"></div>
 	<footer class="main-footer">
 		<div class="wrapper main-footer__wrapper">
 			<div class="logo main-footer__logo">
@@ -407,6 +407,7 @@
 		</div>
 	</footer>
 
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>
