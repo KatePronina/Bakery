@@ -49,8 +49,8 @@ var sliderButtons = document.querySelectorAll('.content__order-btn');
 
 var scrollTo = function (evt) {
 	evt.preventDefault();
-	var id = evt.target.getAttribute('href').slice(1);//id элемента, к которому скроллим
-	var elem = document.querySelector('#' + id);//элемент, к которому скроллим
+	var id = evt.target.getAttribute('href');//id элемента, к которому скроллим
+	var elem = document.querySelector(id);//элемент, к которому скроллим
 
 	window.scroll({
 		behavior: 'smooth',
